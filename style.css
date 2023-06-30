@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+ :root{
+    --gradient:#4267b2;
+ 
+ } 
+    
+
+*{
+    font-family: 'Open Sans', sans-serif; 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+ 
+}
+*::selection{
+    background-color:#4267b2;
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.5rem;
+
+}
+html::-webkit-scrollbar-track{
+    background : #333;
+}
+html::-webkit-scrollbar-thumb{
+    background:#4267b2;
+    border-radius: 5rem;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem 7%;
+    padding-top: 6rem;
+}
+body{
+    height: 300rem;
+} 
+.heading{
+   color:#444;
+   padding:1rem;
+   font-size:4rem;
+   text-align: center;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.5rem 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background:#4267b2;
+    box-shadow:0 .1rem .3rem rgba(0,0,0,.3) ;
+}
+
+header .logo{
+    font-size: 2.5rem; 
+    color: #fff;
+
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+
+}
+header .navbar ul li{
+    margin: 0 1rem;
+
+} 
+header .navbar ul li a{
+font-size: 2rem;
+color: #fff;
+}
+header .navbar ul li a:active,
+header .navbar ul li a:hover{
+    color: yellow;;
+}
+header #login{
+   font-size: 3rem; 
+   color: #fff;
+   cursor: pointer;
+}
+header #login:hover{
+    color:#444;
+}
+header #menu{
+    font-size: 3rem; 
+    color: #fff;
+    cursor: pointer;
+    display:none;
+ }
+ .inline-btn,.home-btn,.btn1{
+   border-radius: .5rem;
+   color:#fff;
+   font-size: 1.8rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   padding:1rem 3rem;
+   text-align: center;
+   margin-top: 1rem;
+   display: inline-block;
+   background-color:#4267b2;
+}
+
+ .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+ }
+ .home h1{
+    font-size: 6rem;
+    color:white;
+ }
+ /* about */
+
+ .about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+ }
+ 
+ .about .row .image{
+    flex: 1 1 40rem;
+ }
+ 
+ .about .row .image img{
+    width: 100%;
+    height: 50rem;
+ }
+ 
+ .about .row .content{
+    flex: 1 1 40rem;
+ }
+ 
+ .about .row .content p{
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--light-color);
+    padding: 1rem 0;
+ }
+ 
+ .about .row .content h3{
+    font-size: 3rem;
+    color:var(--black);
+    text-transform: capitalize;
+ }
+ /* course section start */
+ .course .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+ .course .box-container .box{
+   border-radius: .5rem;
+   background-color:#4267b2;
+   padding: 2rem;
+
+ }
+ .course .box-container .box img{
+   height: 20rem;
+   width: 100%;
+   object-fit: cover;
+
+ }
+ .course .box-container .box .title{
+   color:#333;
+   font-size: 2.1rem;
+ }
+ .course .box-container .box .title:hover{
+   text-decoration:underline;
+ }
+ .course .box-container .box p{
+   padding: 1rem 0;
+   color:#fff;
+   font-size: 1.5rem;
+ }
+
+ /* course section end */
+ .reviews h3{
+    font-size: 3rem;
+    color:var(--black);
+    text-transform: capitalize;
+    text-align: center;
+ }
+ .reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ 
+ .reviews .box-container .box{
+    border-radius: .5rem;
+    background-color:#4267b2;
+    padding: 2rem;
+ }
+ 
+ .reviews .box-container .box p{
+    line-height: 1.7;
+    font-size: 1.7rem;
+    color:#fff;
+ }
+ 
+ .reviews .box-container .box .student{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+ }
+ 
+ .reviews .box-container .box .student img{
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+ 
+ .reviews .box-container .box .student h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: .3rem;
+ }
+ 
+ .reviews .box-container .box .student .stars{
+    font-size: 1.5rem;
+    color:var(--orange);
+ }
+ /* Course section */
+ 
+ /* contact section */
+ .contact .row{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+ }
+ 
+ .contact .row form{
+    flex: 1 1 40rem;
+    border:#4267b2;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+ }
+ 
+ .contact .row .faq{
+    flex: 1 1 40rem;
+ }
+ 
+ .contact .row form h3{
+    color:#444;
+    font-size: 3rem;
+    text-transform: capitalize;
+ }
+ 
+ .contact .row form .box{
+    padding: 2rem 0;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    font-size: 1.8rem;
+    color: var(--sub-color);
+    background:#4267b2;
+    width: 100%;
+ }
+ 
+ .contact .row form .box::placeholder{
+    color:#fff;
+ }
+ 
+ .contact .row form textarea{
+    height: 15rem;
+    resize: none;
+ }
+ 
+ .contact .row .faq .title{
+    padding-bottom: .5rem;
+    font-size: 2.5rem;
+    color: var(--sub-color);
+    text-transform: capitalize;
+    text-align: center;
+ }
+ 
+ .contact .row .faq .box{
+    border-radius: .5rem;
+    border: var(--border);
+    margin-top: 2rem;
+ }
+ 
+ .contact .row .faq .box h3{
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+ }
+ 
+ .contact .row .faq .box p{
+    padding:1.5rem 2rem;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--sub-color);
+    display: none;
+ }
+ 
+ .contact .row .faq .box.active p{
+    display: inline-block;
+ }
+ /* contact section ends */
+ /* footer start */
+ .footer{
+    background-color: var(--light-bg);
+ }
+ 
+ .footer .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:3rem;
+ }
+ 
+ .footer .box-container .box h3{
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+ }
+ 
+ .footer .box-container .box p,
+ .footer .box-container .box a{
+    display: block;
+    font-size: 1.7rem;
+    color:var(--light-color);
+    padding:1rem 0;
+ }
+ 
+ .footer .box-container .box p i,
+ .footer .box-container .box a i{
+    color:var(--purple);
+    padding-right: .5rem;
+ }
+ 
+ .footer .box-container .box a:hover{
+    color:var(--purple);
+    text-decoration: underline;
+ }
+ 
+ .footer .credit{
+    text-align: center;
+    font-size: 2rem;
+    color:var(--light-color);
+    border-top: var(--border);
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+ }
+ 
+ .footer .credit span{
+    color:var(--purple);
+ }
+ 
+ 
+ 
+ 
+ /* media queries  */
+ 
+ @media (max-width:991px){
+ 
+    html{
+       font-size: 55%;
+    }
+ 
+ }
+ /* media quaries */
+ @media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header #menu{
+        display:block;
+    }
+    header .navbar{
+        position: fixed;
+        top:-120%;left:0;
+        width: 100%;
+        background: #444;
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem 0;
+
+    }
+    header .navbar ul li{
+
+        margin:1.5rem 0;
+        text-align: center;
+        width:100%;
+    }
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        display: block;
+    }
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover{
+        color: #4267b2;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar.nav-toggle{
+        top:6.4rem;
+    }
+ }
+ 
